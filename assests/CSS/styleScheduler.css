@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 16px;
     line-height: 1;
     background-color: antiquewhite;
@@ -10,18 +10,28 @@ body {
     border: none;
     resize: none;
     color: #000000;
-    border-left: 1px solid black;
+    border-left: 5px solid #745c47;
     padding: 10px;
+    font-weight: bold;
   }
   
   .jumbotron {
     text-align: center;
-    background-color: burlywood;
-    color: black;
+    background-image: url(https://media.istockphoto.com/vectors/ink-sketch-of-pocket-watch-vector-id1218193568?k=20&m=1218193568&s=612x612&w=0&h=lKPPBwWNna_aydgG7hAkk3Dxi6uPGK9XM2RFVraZ6Hw=);
+    background-blend-mode: color-burn;
+    background-color: rgb(76, 85, 98);
+    color: rgb(187, 222, 117);
     border-radius: 0;
     border-bottom: 10px solid black;
   }
+
+  .jumbotron p {
+    color: antiquewhite;
+  }
   
+  .container {
+    margin-top: 6em;
+  }
   .description {
     white-space: pre-wrap;
   }
@@ -31,42 +41,67 @@ body {
     border-radius: 15px;
   }
   
+  
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;
+    border-top: 2px solid #745c47;
   }
   
   .hour {
     background-color:antiquewhite;
-    color: #000000;
-    border-top: 1px dashed #000000;
+    color: #45382c;
+    
   }
   
   .past {
-    background-color: #b28255;
+    background-color: #d9b594;
     color: white;
   }
   
   .present {
-    background-color: #30578e;
+    background-color:rgb(127, 141, 159);
     color: white;
   }
   
   .future {
-    background-color: #cc3d19;
+    background-color: #93b652;
     color: white;
   }
   
   .saveBtn {
-    border-left: 1px solid black;
+    border-left: 2px solid #745c47;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #5e3812;
+    background-color: #573d24;
     color: white;
   }
   
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
+  }
+  
+  .saveBtn:hover {
+    background-color: rgb(57, 50, 45);
+  }
+
+  .past:hover {
+    background-color: #907358;
+  }
+
+  .present:hover {
+    background-color: rgb(76, 85, 98);
+  }
+
+  .future:hover {
+    background-color: #657743;
+  }
+
+  textarea:hover {
+    font-size:x-large;
+  }
+
+  .hour:hover {
+    font-size: larger;
   }

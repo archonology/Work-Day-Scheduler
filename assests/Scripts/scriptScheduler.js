@@ -10,40 +10,40 @@ var update = function () {
     timeDisplay.html(date.format("dddd, MMMM Do YYYY"));
 };
 
+timeDisplay = $("#currentDay")
+update();
+setInterval(update, 1000);
+
+//function for the body/scheduler
 $(document).ready(function(){
-    timeDisplay = $("#currentDay")
-    update();
-    setInterval(update, 1000);
 
     //get description/event items into local storage
     $(".saveBtn").on("click",function() {
-    //get nearby values.
-    console.log(this);
-    var text = $(this).siblings(".description").val(); // taken the change from the sibling html description attribute
-    var time = $(this).parent().attr("id"); // taken the change from the parent html id attribute
+    var text = $(this).siblings(".description").val(); // take the change from the sibling html description attribute
+    var time = $(this).parent().attr("id"); // take the change from the parent html id attribute
 
     //set items in local storage.
     localStorage.setItem(time, text);
 })
 
     //page will save data for each hour an entry is created/saved. 
-    $("#hour8 .description").val(localStorage.getItem("hour8"));
-    $("#hour9 .description").val(localStorage.getItem("hour9"));
-    $("#hour10 .description").val(localStorage.getItem("hour10"));
-    $("#hour11 .description").val(localStorage.getItem("hour11"));
-    $("#hour12 .description").val(localStorage.getItem("hour12"));
-    $("#hour13 .description").val(localStorage.getItem("hour13"));
-    $("#hour14 .description").val(localStorage.getItem("hour14"));
-    $("#hour15 .description").val(localStorage.getItem("hour15"));
-    $("#hour16 .description").val(localStorage.getItem("hour16"));
-    $("#hour17 .description").val(localStorage.getItem("hour17"));
+    $("#8am .description").val(localStorage.getItem("8am"));
+    $("#9am .description").val(localStorage.getItem("9am"));
+    $("#10am .description").val(localStorage.getItem("10am"));
+    $("#11am .description").val(localStorage.getItem("11am"));
+    $("#12pm .description").val(localStorage.getItem("12pm"));
+    $("#1pm .description").val(localStorage.getItem("1pm"));
+    $("#2pm .description").val(localStorage.getItem("2pm"));
+    $("#3pm .description").val(localStorage.getItem("3pm"));
+    $("#4pm .description").val(localStorage.getItem("4pm"));
+    $("#5pm .description").val(localStorage.getItem("5pm"));
 
     //need to track the current time of day and have it accessible to all the time-blocks -- this way uses moment.js
     function hourTracker() {
         var currentHour = moment().hour(); // Number
 
     //now the time needs to be connected to the blocks themselves
-    $(".time-block").each(function() {
+    $(".description").each(function() {
         var blockHour = parseInt($(this).attr("id").split("hour")[1]);
         console.log(blockHour, currentHour);
 
