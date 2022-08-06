@@ -1,10 +1,10 @@
 # Work Day Scheduler
+--------------------
 Weekly Challenge No.5
 by Reed Meher
 U of MN Coding Bootcamp, August 2022
 deployed site: https://archonology.github.io/Work-Day-Scheduler/
 Repo homepage: https://github.com/archonology/Work-Day-Scheduler.git
-
 --------------------
 ## About the project
 
