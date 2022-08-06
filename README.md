@@ -1,16 +1,17 @@
 # Work Day Scheduler
---------------------
 Weekly Challenge No.5
+
 by Reed Meher
 U of MN Coding Bootcamp, August 2022
+
 deployed site: https://archonology.github.io/Work-Day-Scheduler/
 Repo homepage: https://github.com/archonology/Work-Day-Scheduler.git
---------------------
-## About the project
+
+## About the project:
 
 The challenge was to make a calendar application that saves events for the hour of each day. We were tasked with using moment.js to power the time in our webpage.
 
-## Summary of the page functionality
+## Summary of the page functionality:
 
 - When the page opens, you will see the title of the page and today's date. 
 
@@ -28,5 +29,6 @@ The challenge was to make a calendar application that saves events for the hour 
 
  Reed Meher
  Archonology on Github, August 2022
+ "Live long and prosper"
 
 
