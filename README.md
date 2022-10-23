@@ -1,15 +1,10 @@
 # Work Day Scheduler
-Weekly Challenge No.5
-
-by Reed Meher
-U of MN Coding Bootcamp, August 2022
 
 deployed site: https://archonology.github.io/Work-Day-Scheduler/
-Repo homepage: https://github.com/archonology/Work-Day-Scheduler.git
 
 ## About the project:
 
-The challenge was to make a calendar application that saves events for the hour of each day. We were tasked with using moment.js to power the time in our webpage.
+As a user I want a simple way to track my appointments through the day. When I open the application, the hours for the work day should be displayed, and any past hours should marked, as should the current hour and the upcoming hours.  When I add text and click the save button, my entry should be saved in localStorage, so that when I leave the page and return, my entries are saved.
 
 ## Summary of the page functionality:
 
@@ -25,10 +20,5 @@ The challenge was to make a calendar application that saves events for the hour 
 ### Image of the deployed site:
  <img src="./assests/Objects/Screen Shot 2022-08-06 at 11.44.00 AM.png" alt="Screenshot of deployed page">
 
-
-
- Reed Meher
- Archonology on Github, August 2022
- "Live long and prosper"
 
 
